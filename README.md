@@ -1,4 +1,4 @@
-# InifiniteMonkey
+# InfiniteMonkey
 
 Simulation of the Infinite Monkey Theorem for a string of 28 characters utilizing the random module in Python.
 
@@ -8,3 +8,4 @@ It runs until the random string generated finally matches the goal string, which
 
 Improvements/modifications can/will be made to improve on the process of matching, although doing so will deviate from the original statement from the actual theorem (complete randomness).
 
+Modifications will be in a separate branch as to keep this one intact since it is, technically, the closest imitation of a monkey randomly typing letters forever.
