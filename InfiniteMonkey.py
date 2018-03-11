@@ -7,7 +7,6 @@ def RandString():
 
 def Score(generated):
     goal = "methinks it is like a weasel"
-    attempt = generated
     score = 0
     for i in range(28):
         if goal[i] == generated[i]:
