@@ -1,10 +1,8 @@
-# InifiniteMonkey
+# InfiniteMonkey
 
-Simulation of the Infinite Monkey Theorem for a string of 28 characters utilizing the random module in Python.
+This branch is modified so that instead of generating random strings everytime, the program keeps letters that are correct and only modifies one character in the best string so far.
 
-The program generates a random string of 28 characters everytime and tries to match it to the string: "methinks it is a weasel".
+This way, letters that do match with the goal do not get changed while the ones that do not match gets assigned a random letter until the string completely matches the goal.
 
-It runs until the random string generated finally matches the goal string, which does not happen in our scope of a reasonable time. 
-
-Improvements/modifications can/will be made to improve on the process of matching, although doing so will deviate from the original statement from the actual theorem (complete randomness).
+The program is actually able to reach this goal this way, unlike the original InfiniteMonkey, which could possibly only reach the goal in a infinite amount of time.
 
