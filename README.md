@@ -1,6 +1,6 @@
 # InfiniteMonkey
 
-This branch is modified so that instead of generating random strings everytime, the program keeps letters that are correct and only modifies one character in the best string so far.
+This branch is modified so that instead of generating random strings everytime, the program keeps letters that are correct and only modifies the characters that are different, relative to the goal.
 
 This way, letters that do match with the goal do not get changed while the ones that do not match gets assigned a random letter until the string completely matches the goal.
 
