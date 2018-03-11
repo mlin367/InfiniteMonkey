@@ -16,19 +16,19 @@ def Score(generated):
 def Call():
     generated = RandString()
     closeness = Score(generated)
-    best = 0
     tries = 0
+    goal = "methinks it is like a weasel"
     while closeness != 1:
-        generated = RandString()
-        closeness = Score(generated)
         tries += 1
-        if closeness > best:
-            best = closeness
-            beststring = generated
-        if tries % 100000 == 0:
-            print("Best string generated so far every 100000 tries: ", beststring)
-            print("Accuracy: ", best)
-    return generated    
+        j = 0
+        for i in range(28):
+            if generated[i] != goal[i]:
+                j = i
+        generated = generated[0:j] + random.choice('abcdefghijklmnopqrstuvwxyz ') + generated[j+1:]
+        closeness = Score(generated)
+        print("Best string generated so far: ", generated)
+        print("Accuracy: ", closeness, '\n')
+    print("This program took %d iterations to complete!" % tries)
     
-print(Call())
+Call()
         
